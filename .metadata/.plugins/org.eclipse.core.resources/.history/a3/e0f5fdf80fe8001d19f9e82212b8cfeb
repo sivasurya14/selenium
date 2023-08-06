@@ -1,0 +1,26 @@
+package TestDemo;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class ImageclickTest {
+	public static void main(String[] args) {
+		WebDriver driver = new EdgeDriver();
+		
+		driver.navigate().to("https://demo.guru99.com/test/newtours/index.php");
+		
+		WebElement headingdiv = driver.findElement(By.cssSelector("div.container-fluid"));
+		
+		WebElement span = headingdiv.findElement(By.tagName("a"));
+		
+		System.out.println("href link "+ span.getAttribute("href"));
+		
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,29 @@
+package com.insurance.TestCases;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class BassClass {
+	public String baseURL ="https://demo.guru99.com/insurance/v1/index.php";
+	public String username = "sivasuriyan0120@gmail.com";
+	public String password = "Sivasurya@12";
+	public static WebDriver driver ;
+	
+	@BeforeClass
+	public static void setUP () {
+		System.setProperty("webdriver.edge.driver", System.getProperty("user.dir")+"\\Drivers\\msedgedriver.exe");
+
+		driver = new EdgeDriver();
+		
+	}
+ 
+@AfterClass
+
+public  void tearDown() {
+	
+	driver.quit();
+}
+
+}

@@ -1,0 +1,18 @@
+package TestDemo;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class MercuryTourTesting {
+
+	public static void main(String[] args) {
+		
+		WebDriver driver = new EdgeDriver();
+		
+		driver.navigate().to("https://demo.guru99.com/test/newtours/index.php/");
+		
+		
+		
+	}
+	
+}

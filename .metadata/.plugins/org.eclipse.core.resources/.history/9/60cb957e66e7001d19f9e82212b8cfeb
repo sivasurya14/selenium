@@ -1,0 +1,16 @@
+package TestDemo;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class RegistrationFormTesting {
+	public static void main(String[] args) {
+		
+		WebDriver driver = new EdgeDriver();
+		
+		driver.navigate().to("https://mytestingthoughts.com/Sample/home.html");
+		
+		
+	}
+
+}
